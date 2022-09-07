@@ -3,7 +3,7 @@
     <vue-easy-tree
       ref="veTree"
       node-key="id"
-      height="calc(100vh - 20px)"
+      height="300px"
       :data="treeData"
       :props="props"
     ></vue-easy-tree>

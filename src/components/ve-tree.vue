@@ -32,7 +32,7 @@
         @node-expand="handleNodeExpand"
       />
     </RecycleScroller>
-    <el-tree-node
+    <!-- <el-tree-node
       v-for="child in root.childNodes"
       v-else-if="!isEmpty"
       :key="getNodeKey(child)"
@@ -42,7 +42,7 @@
       :render-content="renderContent"
       :render-after-expand="renderAfterExpand"
       @node-expand="handleNodeExpand"
-    ></el-tree-node>
+    ></el-tree-node> -->
     <div v-if="isEmpty" class="el-tree__empty-block">
       <span class="el-tree__empty-text">{{ emptyText }}</span>
     </div>
@@ -152,7 +152,7 @@ export default {
     },
     keeps: {
       type: Number,
-      default: 40
+      default: 10
     } // 计算希望渲染的tree节点数
   },
 
